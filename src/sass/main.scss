@@ -1,2 +1,6 @@
 @use './base/' as *;
 @use './components/' as components;
+
+body {
+  padding: 5rem 2rem;
+}
