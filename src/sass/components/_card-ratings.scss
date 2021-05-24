@@ -1,0 +1,59 @@
+@use '../utils/' as *;
+
+.card-ratings {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5em 2em;
+  text-align: center;
+
+  @include media($tablets) {
+    flex-direction: row;
+
+    .card__title {
+      margin: 0 0 0 3em;
+    }
+  }
+}
+
+// * HTML Markup
+// <div class="card card--light card-ratings">
+//   <ul class="list list--inline">
+//     <li class="list__item">
+//       <img
+//         class="list__star"
+//         src="./images/icon-star.svg"
+//         alt="A Golden star"
+//       />
+//     </li>
+//     <li class="list__item">
+//       <img
+//         class="list__star"
+//         src="./images/icon-star.svg"
+//         alt="A Golden star"
+//       />
+//     </li>
+//     <li class="list__item">
+//       <img
+//         class="list__star"
+//         src="./images/icon-star.svg"
+//         alt="A Golden star"
+//       />
+//     </li>
+//     <li class="list__item">
+//       <img
+//         class="list__star"
+//         src="./images/icon-star.svg"
+//         alt="A Golden star"
+//       />
+//     </li>
+//     <li class="list__item">
+//       <img
+//         class="list__star"
+//         src="./images/icon-star.svg"
+//         alt="A Golden star"
+//       />
+//     </li>
+//   </ul>
+//   <h2 class="card__title">Rated 5 Stars in Reviews</h2>
+//   </div>
