@@ -1,0 +1,18 @@
+@use '../utils/' as *;
+
+.list {
+  list-style: none;
+
+  $this: &;
+  &--inline {
+    display: flex;
+
+    #{$this}__item {
+      margin: 0 5px;
+    }
+
+    #{$this}__star {
+      width: 18px;
+    }
+  }
+}
