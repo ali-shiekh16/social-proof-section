@@ -7,11 +7,15 @@
   padding: 1.5em 2em;
   text-align: center;
 
+  &__title {
+    font-size: $font-size-body * 1.1;
+  }
+
   @include media($tablets) {
     flex-direction: row;
 
-    .card__title {
-      margin: 0 0 0 3em;
+    &__title {
+      margin: 0 0 0 2em;
     }
   }
 }

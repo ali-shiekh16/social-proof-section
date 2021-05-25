@@ -1,0 +1,87 @@
+@use '../utils/' as *;
+
+.block-social {
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__text {
+    font-size: $font-size-body * 1.15;
+  }
+
+  $cards-margin-bottom: 2rem;
+  &__ratings {
+    margin: 4em 0;
+
+    .card-ratings:not(:last-child) {
+      margin-bottom: $cards-margin-bottom;
+    }
+  }
+
+  &__reviews {
+    .card-review:not(:last-child) {
+      margin-bottom: $cards-margin-bottom;
+    }
+  }
+
+  @include media($tablets) {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(2, 1fr);
+    gap: 8rem 3vw;
+
+    &__content {
+      text-align: left;
+    }
+
+    &__ratings {
+      margin: 0;
+
+      .card-ratings {
+        $margin: 4rem;
+
+        &:nth-child(1) {
+          margin: 0 $margin * 2 0 0;
+        }
+
+        &:nth-child(2) {
+          margin: $cards-margin-bottom $margin;
+        }
+
+        &:nth-child(3) {
+          margin: 0 0 0 $margin * 2;
+        }
+      }
+    }
+
+    &__reviews {
+      $margin: 3rem;
+
+      column-gap: 3rem;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-area: 2 / 1 / -1 / -1;
+
+      .card-review {
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(1) {
+          margin: 0 0 $margin * 2 0;
+        }
+
+        &:nth-child(2) {
+          margin: $margin 0;
+        }
+
+        &:nth-child(3) {
+          margin: $margin * 2 0 0 0;
+        }
+      }
+    }
+  }
+}

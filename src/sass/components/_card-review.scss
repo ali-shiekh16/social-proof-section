@@ -1,0 +1,38 @@
+.card-review {
+  &__content {
+    margin-top: 2em;
+  }
+
+  &__text {
+    &::before {
+      content: '"';
+    }
+
+    &::after {
+      content: '"';
+    }
+  }
+}
+
+// * HTML Markup
+
+// <article class="card card--dark card-review">
+//       <div class="media">
+//         <div class="media__image">
+//           <img src="./images/image-colton.jpg" alt="A picture of Colton." />
+//         </div>
+//         <div class="media__body">
+//           <h2 class="media__title">
+//             Colton Smith
+//             <span class="media__subtitle">Verified Buyer</span>
+//           </h2>
+//         </div>
+//       </div>
+//       <div class="card-review__content">
+//         <p class="card-review__text">
+//           We needed the same printed design as the one we had ordered a week
+//           prior. Not only did they find the originial order, but we also
+//           received it in time. Excellent!
+//         </p>
+//       </div>
+//     </article>

@@ -13,28 +13,21 @@
     background: $color-primary-dark;
     color: $color-gray-light;
 
-    #{$this}__title {
+    h1,
+    h2,
+    h3 {
       color: $color-white;
     }
-  }
-
-  &__title {
-    font-size: $font-size-body * 1.1;
-    letter-spacing: 0;
   }
 }
 
 // * HTML Markup
 
-// <div class="card card--light/card--dark ratings-card">
-//       <h2 class="card__title">Rated 5 Stars in Reviews</h2>
-//       <ul class="list list--inline">
-//         <li class="list__item">
-//           <img
-//             class="list__star"
-//             src="./images/icon-star.svg"
-//             alt="A Golden star"
-//           />
-//         </li>
-//       </ul>
+// <div class="card card--light ratings-card">
+//       <h2>Lorem ipsum dolor sit amet.</h2>
+//       <p>
+//         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, adipisci
+//         aspernatur eveniet ea quia rem et praesentium rerum esse harum
+//         distinctio? Maxime, at officia sequi facilis nihil quasi nam pariatur.
+//       </p>
 //     </div>

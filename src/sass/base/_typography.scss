@@ -17,13 +17,14 @@ h2,
 h3 {
   color: $color-primary-dark;
   font-weight: $font-weight-bold;
-  letter-spacing: -2px;
   margin: 0.5em 0 0.5em;
   line-height: $line-height * 0.75;
 }
 
 h1 {
-  font-size: $font-size-body * 3;
+  font-size: $font-size-body * 4;
+  letter-spacing: -2px;
+  line-height: 1;
 }
 
 h2 {
